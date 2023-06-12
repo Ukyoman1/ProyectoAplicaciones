@@ -1,12 +1,8 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package proyecto.aplicaciones;
 
 /**
  *
- * @author Ukyo
+ * @author Ukyo Moreno Cancino
  */
 public class ImprimirNumeros {
     int numero1;
