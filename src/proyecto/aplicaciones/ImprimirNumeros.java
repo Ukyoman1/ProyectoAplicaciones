@@ -1,5 +1,8 @@
 package proyecto.aplicaciones;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  *
  * @author Ukyo Moreno Cancino
@@ -35,10 +38,10 @@ public class ImprimirNumeros {
     }
     
     
-    // Este metodo verifica el orden de los números, ajustar el rango e imprimir los números en el rango
+    // Este metodo verifica el orden de los números, ajustar el rango e imprimir los números impares en el rango
     public void imprimesionNumeros()
     {
-        int inicio, fin;
+         int inicio, fin;
         if (numero1 < numero2) {
             inicio = numero1 + 1;
             fin = numero2 - 1;
@@ -47,11 +50,15 @@ public class ImprimirNumeros {
             fin = numero1 - 1;
         }
 
-        
-        System.out.println("Los numeros en el rango son:");
+        System.out.println("Los números impares en el rango son:");
+        List<Integer> numerosImpares = new ArrayList<>();
         for (int i = inicio; i <= fin; i++) {
-            System.out.println(i);
+            if (i % 2 != 0) {
+                System.out.println(i);
+                numerosImpares.add(i);
+            }
         }
+        System.out.println("Números impares impresos: " + numerosImpares);
     }
 
 }
