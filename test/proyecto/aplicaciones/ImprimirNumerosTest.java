@@ -17,8 +17,8 @@ public class ImprimirNumerosTest {
     @Test
     public void testImprimesionNumeros() {
         int numero1 = 3;
-        int numero2 = 8;
-        String expectedOutput = "Los numeros en el rango son:\n4\n5\n6\n7\n";
+        int numero2 = 10;
+        String expectedOutput = "Los números pares en el rango son:\n4\n6\n8\nNúmeros pares impresos: [4, 6, 8]\n";
 
         ImprimirNumeros imprimirNumeros = new ImprimirNumeros(numero1, numero2);
 
