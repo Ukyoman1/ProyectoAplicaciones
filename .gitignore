@@ -1,0 +1,21 @@
+# Directorios
+nbproject/
+build/
+
+# Archivos generados por NetBeans
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.xml
+*.mf
+
+# Log y archivos temporales
+*.log
+*.bak
+*.swp
+
+# Archivos de configuración de NetBeans
+nb-configuration.xml
+private/

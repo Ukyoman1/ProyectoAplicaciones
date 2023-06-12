@@ -1,0 +1,63 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package proyecto.aplicaciones;
+
+/**
+ *
+ * @author Ukyo
+ */
+public class ImprimirNumeros {
+    int numero1;
+    int numero2;
+    
+    //Es un contructor de la clase
+    public ImprimirNumeros(int numero1, int numero2) {
+        this.numero1 = numero1;
+        this.numero2 = numero2;
+    }
+    
+    //Este metodo regresa el primer numero
+    public int getNumero1() {
+        return numero1;
+    }
+    
+    //Este metodo recupera y setea el primer numero
+    public void setNumero1(int numero1) {
+        this.numero1 = numero1;
+    }
+    
+    //Este metodo regresa el segundo numero
+    public int getNumero2() {
+        return numero2;
+    }
+    
+    //Este metodo recupera y setea el segundo numero
+    public void setNumero2(int numero2) {
+        this.numero2 = numero2;
+    }
+    
+    
+    // Este metodo verifica el orden de los números, ajustar el rango e imprimir los números en el rango
+    public void imprimesionNumeros()
+    {
+        int inicio, fin;
+        if (numero1 < numero2) {
+            inicio = numero1 + 1;
+            fin = numero2 - 1;
+        } else {
+            inicio = numero2 + 1;
+            fin = numero1 - 1;
+        }
+
+        
+        System.out.println("Los numeros en el rango son:");
+        for (int i = inicio; i <= fin; i++) {
+            System.out.println(i);
+        }
+    }
+    
+    
+    
+}
