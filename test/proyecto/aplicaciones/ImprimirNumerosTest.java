@@ -18,7 +18,7 @@ public class ImprimirNumerosTest {
     public void testImprimesionNumeros() {
         int numero1 = 3;
         int numero2 = 10;
-        String expectedOutput = "Los números impares en el rango son:\n5\n7\n9\nNúmeros impares impresos: [5, 7, 9]\n";
+        String expectedOutput = "Los números pares en el rango son:\n4\n6\n8\nNúmeros pares impresos: [4, 6, 8]\n";
 
         ImprimirNumeros imprimirNumeros = new ImprimirNumeros(numero1, numero2);
 
