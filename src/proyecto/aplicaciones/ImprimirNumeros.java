@@ -1,11 +1,8 @@
 package proyecto.aplicaciones;
 
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  *
- * @author Ukyo Moreno
+ * @author Ukyo Moreno Cancino
  */
 public class ImprimirNumeros {
     int numero1;
@@ -36,9 +33,11 @@ public class ImprimirNumeros {
     public void setNumero2(int numero2) {
         this.numero2 = numero2;
     }
-
-    // Este metodo verifica el orden de los números, ajustar el rango e imprimir los números pares en el rango
-    public void imprimesionNumeros() {
+    
+    
+    // Este metodo verifica el orden de los números, ajustar el rango e imprimir los números en el rango
+    public void imprimesionNumeros()
+    {
         int inicio, fin;
         if (numero1 < numero2) {
             inicio = numero1 + 1;
@@ -48,16 +47,11 @@ public class ImprimirNumeros {
             fin = numero1 - 1;
         }
 
-        System.out.println("Los números pares en el rango son:");
-        List<Integer> numerosPares = new ArrayList<>();
+        
+        System.out.println("Los numeros en el rango son:");
         for (int i = inicio; i <= fin; i++) {
-            if (i % 2 == 0) {
-                System.out.println(i);
-                numerosPares.add(i);
-            }
+            System.out.println(i);
         }
-        System.out.println("Números pares impresos: " + numerosPares);
-
     }
 
 }
