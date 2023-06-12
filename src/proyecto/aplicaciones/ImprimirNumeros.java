@@ -5,7 +5,7 @@ import java.util.List;
 
 /**
  *
- * @author Ukyo Moreno Cancino
+ * @author Ukyo Moreno
  */
 public class ImprimirNumeros {
     int numero1;
